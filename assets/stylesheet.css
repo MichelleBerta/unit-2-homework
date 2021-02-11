@@ -1,0 +1,156 @@
+/*style sheet for activity, not yet adapted for this html*/
+* {
+  box-sizing: border-box;
+  font-family: "Patrick Hand", cursive;
+  --purple: #a565e0;
+  --charcoal: #39373b;
+  --mint: #46f2db;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: var(--charcoal);
+}
+
+/* this is the header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 20rem;
+  padding: 5px;
+}
+
+img {
+  height: 100%;
+  padding-top: 1rem;
+}
+
+/* Hi, I'm Michelle */
+h1,
+h2 {
+  font-size: 3rem;
+  transform: rotate(-8deg);
+  font-family: "Pacifico", cursive;
+  color: var(--purple);
+}
+
+h1 {
+  padding: 2rem;
+}
+
+h2 {
+  padding-left: 6.5rem;
+  line-height: 4rem;
+}
+
+.headings {
+  width: 38%;
+}
+h1::before {
+  content: " 👋 ";
+}
+
+/* navigation */
+nav,
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav,
+a:hover {
+  color: var(--mint);
+}
+
+ul {
+  line-height: 4rem;
+  font-size: 2rem;
+}
+
+/* info cards - main section */
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.card {
+  padding: 10px;
+  width: 27rem;
+  border-radius: 15px;
+  background-color: var(--mint);
+  border-color: var(--charcoal);
+  border-style: solid;
+  border-width: 1px;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+
+.card header {
+  padding: 20px;
+  background: var(--charcoal);
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card a {
+  font-size: 1.5rem;
+  color: var(--charcoal);
+  text-decoration: underline;
+}
+.contact li {
+  color: var(--charcoal);
+  font-size: 1.5rem;
+}
+
+.contact li a:visited {
+  color: var(--purple);
+}
+
+.about-me {
+  width: 24rem;
+  margin: 3px;
+  border-style: solid;
+  border: var(--purple);
+  border-width: 3px;
+  border-radius: 16px;
+}
+
+.mini-card {
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 16px;
+  background: #fff;
+  color: var(--charcoal);
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 25rem;
+}
+
+.mini-card-title {
+  font-size: 2rem;
+  background-color: var(--purple);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* WORK ON THIS PART */
+/* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+  .card {
+    width: 60%;
+  }
+}
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
