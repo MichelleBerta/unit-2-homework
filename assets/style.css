@@ -207,12 +207,15 @@ ul {
 }
 /* view at 576px or smaller */
 @media screen and (max-width: 576px) {
-  img {
-    padding-left: 1rem;
-    padding-top: 1rem;
+  .header {
+    height: 100%;
+    flex-wrap: wrap;
   }
-  h1 {
-    float: right;
+
+  img {
+    padding-left: 2rem;
+    padding-top: 3rem;
+    width: 50%;
   }
 
   h1,
@@ -222,15 +225,19 @@ ul {
   }
 
   h1 {
-    padding-top: 1rem;
+    padding-top: 6rem;
   }
 
-  nav {
-    display: block;
-    clear: left;
+  h2 {
+    padding-left: 1rem;
   }
 
   ul {
     line-height: 2.5rem;
+  }
+
+  li {
+    float: left;
+    padding: 1rem;
   }
 }
