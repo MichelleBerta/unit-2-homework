@@ -120,6 +120,7 @@ ul {
   border-radius: 16px;
 }
 
+/* My Work Cards */
 .mini-card {
   padding: 1rem;
   width: 25rem;
@@ -203,37 +204,33 @@ ul {
   h1 {
     padding-top: 1rem;
   }
-  /*
+}
+/* view at 576px or smaller */
+@media screen and (max-width: 576px) {
+  img {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  h1 {
+    float: right;
+  }
+
+  h1,
   h2 {
-    padding-left: 2.5;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
-  .flex-container {
-    flex-direction: column;
-    margin: 0 2 0 2;
-  }
-  .card {
-    width: 93%;
-    padding: 39px;
-    margin-left: 43px;
-    margin-bottom: 43px;
+  h1 {
+    padding-top: 1rem;
   }
 
-  .card header {
-    width: 100%;
+  nav {
+    display: block;
+    clear: left;
   }
 
-  p {
-    padding-top: 22px;
-    padding-top: 9px;
+  ul {
+    line-height: 2.5rem;
   }
-
-  .image-container img {
-    width: 100%;
-  }
-
-  .mini-card {
-    width: 100%;
-  }
-  */
 }
