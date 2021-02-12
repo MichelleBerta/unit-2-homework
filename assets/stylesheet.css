@@ -138,6 +138,10 @@ ul {
   text-align: center;
 }
 
+.mini-card-image-container img {
+  width: 23rem;
+}
+
 /* view at 992px or smaller */
 @media screen and (max-width: 992px) {
   h1,
@@ -182,20 +186,24 @@ ul {
   .mini-card {
     width: 100%;
   }
+
+  .mini-card-image-container img {
+    width: 100%;
+  }
 }
 
 /* view at 768px or smaller */
 @media screen and (max-width: 768px) {
   h1,
   h2 {
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   h1 {
     padding-top: 1rem;
   }
-
+  /*
   h2 {
     padding-left: 2.5;
   }
@@ -227,4 +235,5 @@ ul {
   .mini-card {
     width: 100%;
   }
+  */
 }
